@@ -1,0 +1,18 @@
+<plugin name='localizable' version='0.1' grailsVersion='1.3.5 &gt; *'>
+  <author>Dani Latorre</author>
+  <authorEmail>dani@danilat.com</authorEmail>
+  <title>Localizable plugin, a wrapper to google maps geocoding service</title>
+  <description>\
+A wrapper to google maps geocoding service
+</description>
+  <documentation>http://grails.org/plugin/localizable</documentation>
+  <resources>
+    <resource>BuildConfig</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>UrlMappings</resource>
+    <resource>com.grails.plugins.localizable.GeocodingService</resource>
+  </resources>
+  <dependencies />
+  <behavior />
+</plugin>

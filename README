@@ -1,0 +1,8 @@
+# Description:
+	This is a google map geocoding service wrapper for grails applications 
+
+## Installation:
+	$ grails install-plugin localizable
+
+## Usage:
+	This plugin adds a service: geocodingService
