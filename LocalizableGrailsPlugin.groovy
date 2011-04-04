@@ -1,7 +1,6 @@
-import com.grails.plugins.localizable.Localizable
 
 class LocalizableGrailsPlugin {
-	def geocodingService
+
     // the plugin version
     def version = "0.1"
     // the version or versions of Grails the plugin is designed for
@@ -14,11 +13,11 @@ class LocalizableGrailsPlugin {
     ]
 
     // TODO Fill in these fields
-    def author = "Your name"
-    def authorEmail = ""
-    def title = "Plugin summary/headline"
+    def author = "Dani Latorre"
+    def authorEmail = "dani@danilat.com"
+    def title = "Localizable plugin, a wrapper to google maps geocoding service"
     def description = '''\\
-Brief description of the plugin.
+A wrapper to google maps geocoding service
 '''
 
     // URL to the plugin's documentation
@@ -33,12 +32,6 @@ Brief description of the plugin.
     }
 
     def doWithDynamicMethods = { ctx ->
-		Localizable.metaClass.findLatLng = { address ->
-			return geocodingService.findLatLngByAddress(address)
-		}
-		Localizable.metaClass.findAddress = { lat, lng ->
-			return geocodingService.findAddressByLatLng(lat, lng)
-		}
     }
 
     def doWithApplicationContext = { applicationContext ->
